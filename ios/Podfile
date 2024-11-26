@@ -49,6 +49,17 @@ target 'rn75test' do
   pod 'FirebaseCore', :modular_headers => true
   pod 'GoogleUtilities', :modular_headers => true
 
+  # pod 'FirebaseCore' do
+  #   use_frameworks! :linkage => :static
+  # end
+  # pod 'GoogleUtilities' do
+  #   use_frameworks! :linkage => :static
+  # end
+
+
+  pod 'FirebaseCore', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+
   use_react_native!(
     :path => config[:reactNativePath],
     :hermes_enabled => podfile_properties['expo.jsEngine'] == nil || podfile_properties['expo.jsEngine'] == 'hermes',
